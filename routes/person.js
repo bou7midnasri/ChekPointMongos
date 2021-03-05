@@ -21,9 +21,9 @@ router.post("/Manypersons", (req, res) => {
      
       let arrayOfPersons=[
             { name: "Imed", age: 20, favoriteFoods: ["hamburger"] },
-            { name: "hager", age: 28, favoriteFoods: ["rice"] },
-            { name: "Marry", age: 20, favoriteFoods: ["Salad"] },
-            { name: "MarryJ", age: 20, favoriteFoods: ["burrito"] }
+            { name: "Amal", age: 29, favoriteFoods: ["rice"] },
+            { name: "Issam", age: 35, favoriteFoods: ["Salad"] },
+            { name: "Ali", age: 17, favoriteFoods: ["Soup"] }
       ];
 
       Person
@@ -55,3 +55,5 @@ router.get("/favoriteFoods/:fav", (req, res) => {
       .then((persons) => res.send(persons))
       .catch((err) => res.send(err))
 })
+
+module.exports = router;
